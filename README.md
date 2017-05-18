@@ -38,4 +38,5 @@ Inspired by the "Breakthrough Starshot" project to develop a small probe to expl
 The content of this repository was authored by:
 
 * [Eric Godat](https://github.com/egodat)
+* [Christopher Milke](https://github.com/cmilke)
 * [Stephen Sekula](https://github.com/stephensekula)
