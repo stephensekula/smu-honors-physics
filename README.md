@@ -27,3 +27,15 @@ In the Fall of 2017, we are adding a new component: a singular theme to unite th
 ![Page describing the fall 2017 grand challenge problem](images/Fall2016-GrandChallenge_thumbnail.png "Fall 2017 exoplanet grand challenge problem")
 
 Inspired by the "Breakthrough Starshot" project to develop a small probe to explore planet Proxima-B, 4 light-years away orbiting the star Proxima Centauri (c.f. [Guardian Science Weekly: Breakthrough Starshot: getting to Proxima Centauri b -- Science Weekly podcast](https://www.theguardian.com/science/audio/2017/apr/20/breakthrough-starshot-getting-to-proxima-centauri-b-science-weekly-podcast)), students will develop details ideas about a probe mission to one of the worlds of the [TRAPPIST-1 system](https://exoplanets.nasa.gov/trappist1/). This is a much more challenging problem, given the extreme distance between earth and TRAPPIST-1, but the diversity of its planets is likely more rich than that of Proxima Centauri and each planey may pose a unique challenge to a problem assuming that such a probe could ever successfully reach the system.
+
+### Activities
+
+* [Introduction to Python](python_basics/) - an awesome programming language
+* [Adventures in Spacetime](AdventuresInSpacetime/) - learn about different kinds of numbers and understand what it means to have direction and magnitude. Vectors are essential to describing forces, acceleration, and velocity, which are all crucial in space travel and exploration.
+
+# Acknowledgements
+
+The content of this repository was authored by:
+
+* [Eric Godat](https://github.com/egodat)
+* [Stephen Sekula](https://github.com/stephensekula)
