@@ -1,0 +1,13 @@
+6.674e-11 #Newton's constant: Alters the force of gravity. 6.67e-11 is the true value
+1e-9 #Distance Scale: Makes everything bigger or smaller (basically the same as camera controls)
+5e-5 #Period Scale: Changes how fast time moves. 1 = real-time, 1e-3 = 1000 times faster
+
+mass (kg) ; position (m) ; velocity (m/s) ; color   ; marker
+1.594e29  ;   0 0 0      ;  0 0 0         ; red     ; o
+4.72e24   ;  1.66e9 0 0  ;  0 7.99e4 0    ; orange  ;
+9.73e24   ;  2.28e9 0 0  ;  0 6.85e4 0    ; #C75F23 ;
+1.97e24   ;  3.21e9 0 0  ;  0 5.76e4 0    ; #27EA00 ;
+1.43e24   ;  4.22e9 0 0  ;  0 5.03e4 0    ; cyan    ;
+2.15e24   ;  5.55e9 0 0  ;  0 4.38e4 0    ; #0D38F9 ;
+3.380e24  ;  6.74e9 0 0  ;  0 3.97e4 0    ; #16FFAE ;
+5.136e23  ;  8.92e9 0 0  ;  0 3.46e4 0    ; #D3D5AE ;
