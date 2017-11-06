@@ -3,13 +3,13 @@ from src import simulation_condition_reader
 from src import simulation_interface
 from src import simulation_artist
 
-time_duration = 60 #seconds
-timestep_length = .0001 #reccomended = 0.001; 0.0001 is ideal but slow
+time_duration = 10 #seconds
+timestep_length = .001 #reccomended = 0.001; 0.0001 is ideal but slow
 
 render_parameters = {'x':[-10,10],         #x borders of the final image
                      'y':[-10,10],         #y borders of the final image
                      'z':[-10,10],         #z borders of the final image
-                     'flat mode':False,    #generate the image/video looking straight down onto the xy plane
+                     'flat mode':True,    #generate the image/video looking straight down onto the xy plane
                      'animate mode':True,  #generate an mp4 video of the simulation, instead of only a picture
                      'render trails':True} #gives all moving objects a trail
 

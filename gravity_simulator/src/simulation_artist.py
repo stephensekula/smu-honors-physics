@@ -6,6 +6,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 _trail_length_divisor = 50 #make this smaller to make the trail longer
+_frames_per_second = 10
 
 
 
@@ -63,11 +64,13 @@ def initialize_animation(position_list, render_parameters):
                          color=color[i],
                          marker=marker[i])[0]
         lines.append(line)
-    return lines
+
+    time_text = axes.text2D(0.1,0.9,'',color='white', transform=axes.transAxes, fontsize=15)
+    return lines, time_text
 
 
 
-def animate(visible_step, position_list, time_duration, number_visible_steps, render_parameters, lines):
+def animate(visible_step, position_list, time_duration, number_visible_steps, render_parameters, lines, time_text):
     number_steps = len(position_list[0][0])
     animation_trail_length = int(number_steps / _trail_length_divisor)
 
@@ -85,19 +88,24 @@ def animate(visible_step, position_list, time_duration, number_visible_steps, re
         lines[i].set_data(x,y)
         lines[i].set_3d_properties(z)
 
+    seconds_per_day = 86400.0
+    days_elapsed = visible_step / ( _frames_per_second * render_parameters['period_scale'] * seconds_per_day )
+    time_text.set_text('time = ' + str(days_elapsed) + ' Earth days')
+
 
 
 def render_animation(time_duration,position_list,render_parameters):
-    number_visible_steps = int(time_duration*10) #ten frames per second
+    number_visible_steps = int(time_duration*_frames_per_second)
     figure = render_parameters['figure']
-    lines = initialize_animation(position_list,render_parameters)
+    lines, time_text = initialize_animation(position_list,render_parameters)
     animation = Animator.FuncAnimation(figure,animate,
                     number_visible_steps,interval=100,blit=False,
                     fargs=(position_list,
                            time_duration,
                            number_visible_steps,
                            render_parameters,
-                           lines)
+                           lines,
+                           time_text)
                     )
     animation.save('animation.mp4')
 

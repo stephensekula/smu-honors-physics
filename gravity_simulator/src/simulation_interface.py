@@ -5,7 +5,7 @@ import math
 
 
 def simulate(time_duration, timestep_length, initial_conditions):
-    number_steps = int(time_duration*10 / timestep_length)
+    number_steps = int(time_duration / timestep_length)
 
     dir_path = os.path.dirname(os.path.realpath(__file__))
     simulation_engine_file = dir_path + '/simulation_engine.so'

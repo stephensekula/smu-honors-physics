@@ -1,4 +1,5 @@
 def read(conditions_file_name, render_parameters):
+
     conditions_file = open(conditions_file_name,'r')
 
     gravity_line = conditions_file.readline()
@@ -45,5 +46,6 @@ def read(conditions_file_name, render_parameters):
 
     render_parameters['colors'] = colors
     render_parameters['markers'] = markers
+    render_parameters['period_scale'] = period_scale_factor
 
     return initial_conditions
